@@ -64,7 +64,7 @@ const QuizPage = () => {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [timeLeft]);
+  });
 
   const handleNextQuestion = (answer: string) => {
     const updatedAnswers = [...userAnswers, answer];
